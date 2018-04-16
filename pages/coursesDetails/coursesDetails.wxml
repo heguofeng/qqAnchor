@@ -1,0 +1,84 @@
+<!--pages/apply/apply.wxml-->
+
+<view class='container'>
+  <view class='head'>
+    <view class='mainPic'>
+      <image src='/images/activity/5.jpg' mode='aspectFill'></image>
+    </view>
+    <view class='title'>
+      <text>老外活动11期，草长莺飞二月天，野骑去！</text>
+    </view>
+    <view class='author'>
+      <text class='author-title'>主办方</text>
+      <image src='/images/scroll2.jpg'></image>
+      <text class='author-name'>ET Planet</text>
+    </view>
+    <!-- title结束 -->
+  </view>
+  <!-- head结束 -->
+  <view class='address'>
+    <view class='icon'>
+      <image src='/images/system/address.png'></image>
+    </view>
+    <view class='address-text'>
+      <view class='address-title'>活动地址</view>
+      <view class='address-name'>武林广场出发sdad大手大脚奥斯卡回到家阿克苏大萨达撒多撒多撒多所四大大神</view>
+    </view>
+    <view class='right'>
+      <image src='/images/system/right.png'></image>
+    </view>
+  </view>
+  <!-- address结束 -->
+  <view class='date'>
+    <view class='icon'>
+      <image src='/images/system/date.png'></image>
+    </view>
+    <view class='date-text'>
+      <view class='date-title'>活动起止</view>
+      <view class='date-name'>2018-03-26 12:22:00~2018-04-24 12:00:00</view> -
+    </view>
+  </view>
+  <!-- date结束 -->
+  <view class='action-box'>
+    <view class='btn-share'>
+      <text>分 享</text>
+    </view>
+    <view class='btn-focus'>
+      <view class='heart'>
+        <image src='/images/system/heart-white.png'></image>
+      </view>
+      <text class='btn-text'>关 注</text>
+      <text class='focus-num'>2</text>
+    </view>
+  </view>
+  <!-- action-box结束 -->
+  <view class='content'>
+    <view class='content-title clearfix'>
+      <view class='icon'>
+        <image src='/images/system/content.png'></image>
+      </view>
+      <text>活动内容</text>
+
+    </view>
+    <view class='content-main'>
+      请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/> 请填写活动内容。。。
+      <br/>
+      <image src='/images/activity/5.jpg'></image>
+    </view>
+  </view>
+  <!--垫子  -->
+  <view class='footer'></view>
+  <!--加入购物车  -->
+  <add-carts id="addCarts" counts="{{counts}}" goodsId="{{goodsId}}"></add-carts>
+  <!-- fix-box结束 -->
+</view>

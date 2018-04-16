@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "add-carts":"/components/addCarts/addCarts"
+  }
+}

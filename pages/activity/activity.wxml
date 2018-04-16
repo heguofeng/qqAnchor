@@ -1,0 +1,39 @@
+<!--pages/activity/activity.wxml-->
+<view class='container'>
+  <view class='head clearfix'>
+    <view class="left-box {{flag==1?'box-hover':''}}" bindtap='switchNav' data-id='1'>
+      <text>2月</text>
+    </view>
+    <view class="mid-box {{flag==2?'box-hover':''}}" bindtap='switchNav' data-id='2'>
+      <text>3月</text>
+    </view>
+    <view class="right-box {{flag==3?'box-hover':''}}" bindtap='switchNav' data-id='3'>
+      <text>4月</text>
+    </view>
+  </view>
+  <block wx:for="{{activitys}}">
+    <view class='item' bindtap='gotocoursesDetails' data-id="{{item.id}}">
+      <view class='first-box fl'>
+        <view class='wrap-box'>
+          <view class='title'>{{item.title}}</view>
+          <text class='content'>{{item.author}}</text>
+        </view>
+      </view>
+      <view class='second-box fl'>
+        <view class='wrap-box'>
+          <view class='title'>名额</view>
+          <text class='content'>{{item.plances}}</text>
+        </view>
+      </view>
+      <view class='third-box fl'>
+        <view class='wrap-box'>
+          <view class='title'>状态</view>
+          <text class='content'>{{item.status?"未开始":"已结束"}}</text>
+        </view>
+      </view>
+      <view class='fourth-box fl'>
+        <image src="{{item.pic}}"></image>
+      </view>
+    </view>
+    </block>
+</view>

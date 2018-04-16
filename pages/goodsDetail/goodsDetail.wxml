@@ -1,0 +1,9 @@
+<!--pages/goodsDetail/goodsDetail.wxml-->
+<text>pages/goodsDetail/goodsDetail.wxml</text>
+<view class='container'>
+当前页面的id是{{goodId}}
+  <!--垫子  -->
+  <view class='footer'></view>
+  <!-- 自定义fixed组件 -->
+  <add-carts id="addCarts" counts="19" goodsId="10"></add-carts>
+</view>

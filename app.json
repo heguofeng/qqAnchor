@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/contribute/contribute",
+    "pages/carts/carts",
+    "pages/my/my",
+    "pages/courses/courses",
+    "pages/activity/activity",
+    "pages/qStore/qStore",
+    "pages/camp/camp",
+    "pages/coursesDetails/coursesDetails",
+    "pages/shoppingCarts/shoppingCarts",
+    "pages/orderConfirm/orderConfirm",
+    "pages/goodsDetail/goodsDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "大浙网",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#f2f2f2"
+  },
+  "tabBar": {
+    "color":"#5c5c5c",
+    "selectedColor": "#f51e48",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/index1.png",
+        "selectedIconPath": "images/tabBar/index.png"
+      },
+      {
+        "pagePath": "pages/contribute/contribute",
+        "text": "投稿",
+        "iconPath": "images/tabBar/contribute1.png",
+        "selectedIconPath": "images/tabBar/contribute.png"
+      },
+      {
+        "pagePath": "pages/carts/carts",
+        "text": "购物车",
+        "iconPath": "images/tabBar/carts1.png",
+        "selectedIconPath": "images/tabBar/carts.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/tabBar/my1.png",
+        "selectedIconPath": "images/tabBar/my.png"
+      }
+    ]
+  }
+}

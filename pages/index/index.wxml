@@ -1,0 +1,111 @@
+<view class="container">
+  <view class='haibao'>
+    <swiper indicator-dots='true' autoplay='true'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src='{{item}}' class='silde-image' mode='aspectFill'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='notificationBar'>
+    <image src='/images/system/notification.png'></image>
+    <text>QQ主播招募通知</text>
+  </view>
+  <view class='cut'></view>
+  <view class='nav'>
+    <view class='item' bindtap='gotoCourses'>
+      <view>
+        <image src='/images/system/nav1.png'></image>
+      </view>
+      <view>精品课程</view>
+    </view>
+    <view class='item' bindtap='gotoCamp'>
+      <view>
+        <image src='/images/system/nav2.png'></image>
+      </view>
+      <view>冬夏令营</view>
+    </view>
+    <view class='item' bindtap='gotoActivity'>
+      <view>
+        <image src='/images/system/nav3.png'></image>
+      </view>
+      <view>活动排期</view>
+    </view>
+    <view class='item' bindtap='gotoQstore'>
+      <view>
+        <image src='/images/system/nav4.png'></image>
+      </view>
+      <view>小Q商城</view>
+    </view>
+  </view>
+  <!-- <view class='cut'></view> -->
+  <!-- nav 结束-->
+  <view class='recommend'>
+    <view class='recommend-title'>栏目推荐</view>
+    <view class='recommend-content'>
+      <scroll-view class='scroll-recommend' scroll-x>
+        <view class='scroll-item'>
+          <view class='scroll-img'>
+            <image src='/images/scroll1.jpg'></image>
+          </view>
+          <view class='scroll-text'>晚安电台</view>
+        </view>
+        <view class='scroll-item'>
+          <view class='scroll-img'>
+            <image src='/images/scroll2.jpg'></image>
+          </view>
+          <view class='scroll-text'>辣妈开车啦</view>
+        </view>
+        <view class='scroll-item'>
+          <view class='scroll-img'>
+            <image src='/images/scroll3.jpg'></image>
+          </view>
+          <view class='scroll-text'>非遗传承人</view>
+        </view>
+        <view class='scroll-item'>
+          <view class='scroll-img'>
+            <image src='/images/scroll4.jpg'></image>
+          </view>
+          <view class='scroll-text'>校园通讯社.</view>
+        </view>
+        <view class='scroll-item'>
+          <view class='scroll-img'>
+            <image src='/images/scroll5.jpg'></image>
+          </view>
+          <view class='scroll-text'>晚安电台</view>
+        </view>
+        <view class='scroll-item'>
+          <view class='scroll-img'>
+            <image src='/images/scroll6.jpg'></image>
+          </view>
+          <view class='scroll-text'>晚安电台dsadas</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <!-- recommend 结束-->
+  <view class='cut'></view>
+  <view class='news'>
+  <block wx:for="{{news}}">
+    <view class='news-item'>
+      <view class='news-text'>
+        <view class='news-title'>{{item.title}}</view>
+        <view class='news-info'>
+          <view class='news-date'>
+            <image src='/images/system/news-time.png'></image>
+            <text>{{item.date}}</text>
+          </view>
+          <view class='news-reviews'>
+            <image src='/images/system/news-reviews.png'></image>
+            <text>{{item.reviewsNum}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='news-img'>
+        <image src="{{item.pic}}"></image>
+      </view>
+    </view>
+    </block>
+  </view>
+</view>

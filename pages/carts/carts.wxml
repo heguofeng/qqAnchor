@@ -1,0 +1,80 @@
+<!--pages/carts/carts.wxml-->
+<view class='container'>
+  <view hidden='{{!editStatus}}' class='top-block'></view>
+  <view class="{{editStatus==false?'edit-box':'edit-box-fixed'}}">
+      <!-- <block wx:if="{{editStatus}}">   -->
+      <view class='concern' animation="{{animationData}}">添加至关注</view>
+      <view class='delete' bindtap='delete' animation="{{animationData}}">删除</view>
+     <!-- </block>  -->
+    <text class='edit' bindtap='edit'>{{editText}}</text>
+  </view>
+  <view class='cut'></view>
+  <block wx:for="{{carts}}">
+    <view class='cards'>
+      <view class='cards-head'>
+        <icon wx:if="{{item.selected}}" type='success' color='#f51e48' bindtap='selectList' data-index='{{index}}'></icon>
+        <icon wx:else type='circle' bindtap='selectList' data-index='{{index}}'></icon>
+        <view class='head-title'>
+          <image src='{{item.avatar}}'></image>
+          <text>{{item.author}}</text>
+        </view>
+      </view>
+      <view class='carts-content'>
+        <icon wx:if="{{item.selected}}" type='success' color='#f51e48' bindtap='selectList' data-index='{{index}}'></icon>
+        <icon wx:else type='circle' bindtap='selectList' data-index='{{index}}'></icon>
+        <view class='content-info'>
+          <image class='mainPic' src='{{item.pic}}'></image>
+          <view class='info-text'>
+            <view class='info-title'>
+              <text>{{item.title}}</text>
+            </view>
+            <view class='info-content'>
+              <view class='price'>￥
+                <text>{{item.price}}</text>.00
+              </view>
+              <view class='changeNum'>
+                <block wx:if="{{item.num==1}}">
+                  <view class='change' bindtap="minusCount" data-index="{{index}}"><image src='/images/system/minus.png'></image></view>
+                </block>
+                <block wx:else>
+                  <view class='change' bindtap="minusCount" data-index="{{index}}"><image src='/images/system/minus1.png'></image></view>
+                </block>
+                <input type='number' value='{{item.num}}' class='num' bindblur='changeNum' data-index="{{index}}"></input>
+                <block wx:if="{{item.num==199}}">
+                  <view class='change' style="color:#c3c3c3" bindtap="addCount" data-index="{{index}}"><image src='/images/system/add1.png'></image></view>
+                </block>
+                <block wx:else>
+                  <view class='change' bindtap="addCount" data-index="{{index}}"><image src='/images/system/add.png'></image></view>
+                </block>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='cut'></view>
+  </block>
+  <view class='footer'></view>
+  <!-- 浮动层 -->
+  <view class='fixed-box'>
+    <view class='selectAll'>
+      <icon wx:if="{{allSelected}}" type='success' color='#f51e48' bindtap='allSelected' data-index='{{index}}'></icon>
+      <icon wx:else type='circle' bindtap='allSelected' data-index='{{index}}'></icon>
+      <text>全选</text>
+    </view>
+    <block wx:if="{{!editStatus&&allCounts>0}}">
+      <view class='clear' bindtap='gotoOrderConfirm'>去结算
+        <text class='all-num'>({{allCounts}}件)</text>
+      </view>
+    </block>
+    <block wx:else>
+      <view class='clear' style="color:#8f8f8f;background-color:#cccccc;">去结算
+        <text class='all-num'>({{allCounts}}件)</text>
+      </view>
+    </block>
+    <view class='sum'>
+      <text>合计：</text>
+      <text class='sum-num'>￥{{totalPrice}}</text>
+    </view>
+  </view>
+</view>

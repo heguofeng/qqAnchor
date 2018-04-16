@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "add-carts":"/components/addCarts/addCarts"
+  },
+  "navigationBarTitleText": "商品详情"
+}

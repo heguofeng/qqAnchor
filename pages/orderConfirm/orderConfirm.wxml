@@ -1,0 +1,2 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<text>当前商品的id是{{goodsId}}</text>

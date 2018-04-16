@@ -1,0 +1,278 @@
+/* pages/carts/carts.wxss */
+.container::before{
+  content: "";
+  width: 100%;
+  height: 1rpx;
+  background: #f2f2f2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.cut{
+  height: 18rpx;
+}
+.top-block{
+  height: 80rpx;
+  width: 100%;
+}
+.edit-box {
+  height: 80rpx;
+  width: 100%;
+  line-height: 80rpx;
+  /* text-align: right; */
+  color: #f51e48;
+  font-size: 28rpx;
+  background-color: #fff;
+}
+.edit-box-fixed{
+  height: 80rpx;
+  width: 100%;
+  line-height: 80rpx;
+  /* text-align: right; */
+  color: #f51e48;
+  font-size: 28rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #f2f2f2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.concern:active,.delete:active,
+.edit:active{
+  color: #c2c2c2;
+}
+.concern{
+   /* opacity: 0;  */
+   position: relative;
+   left: -450rpx;
+  margin: 15rpx 30rpx;
+  float: left;
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #11cbd7;
+  border: 1px solid #11cbd7;
+  border-radius: 50rpx;
+}
+.delete{
+  /* opacity: 0; */
+    position: relative;
+   left: -450rpx;
+   margin: 15rpx 0;
+   float: left;
+  width: 150rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border: 1px solid #f51e48;
+  border-radius: 50rpx;
+}
+.edit {
+  float: right;
+  padding-right: 20rpx;
+}
+
+.cards {
+  padding-left: 10rpx;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cards-head {
+  height: 80rpx;
+  width: 100%;
+  float: left;
+  line-height: 80rpx;
+  color: #f51e48;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.cards-head icon {
+  float: left;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+}
+
+.head-title {
+  margin-left: 20rpx;
+  float: left;
+}
+.head-title image {
+  width: 52rpx;
+  height: 52rpx;
+  float: left;
+  margin-top: 15rpx;
+  border-radius: 50%;
+}
+
+.head-title text {
+  /* font-weight: bold; */
+  color: #000;
+  font-size: 30rpx;
+  margin-left: 16rpx;
+}
+.head-title text:active {
+  color: #c2c2c2;
+}
+.carts-content {
+  width: 740rpx;
+  float: left;
+  height: 188rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.carts-content icon {
+  float: left;
+  margin-top: 64rpx;
+  margin-left: 10rpx;
+}
+
+.content-info {
+  padding-left: 20rpx;
+  float: left;
+  width: 680rpx;
+  box-sizing: border-box;
+}
+
+.content-info .mainPic {
+  width: 186rpx;
+  height: 120rpx;
+  margin-top: 26rpx;
+  float: left;
+}
+
+.info-text {
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  width: 455rpx;
+  padding-left: 10rpx;
+}
+.info-title{
+   height: 90rpx; 
+  width: 100%;
+}
+
+.info-title text{
+  height: 80rpx;
+  width: 97%;
+  display: -webkit-box;
+  font-size: 30rpx;
+  color: #000;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+}
+.info-title text:active{
+  color: #c2c2c2;
+}
+.info-content{
+  overflow:hidden;
+}
+.price{
+  font-size: 24rpx;
+  color: #f51e48;
+  float: left;
+}
+.price text{
+  font-size: 36rpx;
+}
+.changeNum{
+  float: right;
+  /* overflow: hidden; */
+  margin-right: 15rpx;
+  /* border: 1px solid #5c5c5c; */
+}
+.change{
+  display: block;
+  float: left;
+  width: 56rpx;
+  height: 56rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #f2f2f2; 
+  padding: 5rpx;
+
+}
+.change image{
+  width: 46rpx;
+  height: 46rpx;
+}
+.num{
+  display: block;
+   margin: 0 2rpx; 
+  /* border-left: 1px solid #5c5c5c;
+  border-right: 1px solid #5c5c5c; */
+  float: left;
+  width: 56rpx; 
+  height: 56rpx;
+  line-height: 56rpx;
+  padding: 0 5rpx;
+  background-color: #f2f2f2; 
+  text-align: center;
+  color: #000;
+  font-size: 28rpx;
+}
+
+.fixed-box{
+  z-index: 999;
+  height: 96rpx;
+  background-color: #fff;
+  border-top: 1px solid #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 96rpx;
+}
+.selectAll icon{
+  float: left;
+  margin-top: 23rpx;
+  margin-left: 10rpx;
+}
+.selectAll  text{
+    float: left;
+  margin-left: 10rpx;
+  font-size: 26rpx;
+  color: #5c5c5c;
+}
+.sum{
+  float: right;
+  margin-right:16rpx;
+font-weight:700;
+font-size:30rpx;
+}
+.sum-num{
+  color: #f51348;
+}
+/* 按钮 */
+.clear{
+  width: 200rpx;
+  background-color: #f51e48;
+  color: #fff;
+  height: 96rpx;
+  float: right;
+  text-align: center;
+}
+.clear text{
+  font-size: 20rpx;
+}
+.clear:active{
+  color: #c2c2c2;
+}
+.footer{
+  height: 96rpx;
+  width: 100%;
+  background-color: #fff;
+}

@@ -1,0 +1,108 @@
+/* pages/activity/activity.wxss */
+.container{
+  padding-top: 78rpx;
+}
+.container::before{
+  height: 0;
+}
+.head{
+   box-sizing: border-box; 
+  overflow: hidden;
+  width: 100%;
+  /* height: 78rpx; */
+  background-color: #fff;
+  border: 4rpx solid #f51e48;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #f51e48;
+}
+.left-box,.right-box{
+  width: 33.33%;
+  height: 70rpx;
+  box-sizing: border-box; 
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  line-height: 70rpx;
+}
+.left-box,.mid-box{
+  border-right: 4rpx solid #f51e48;
+}
+.mid-box{
+  width: 33.34%;
+  height: 70rpx;
+   box-sizing: border-box; 
+  overflow: hidden;
+  /* border-left: 4rpx solid #f51e48; */
+  float: left;
+  text-align: center;
+  line-height: 70rpx;
+}
+.box-hover{
+  background-color: #f51e48;
+  color: #fff;
+}
+
+.item{
+  width: 95%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 164rpx;
+  overflow: hidden;
+  margin-top: 16rpx;
+  border: 2rpx solid #d2d2d2;
+  border-radius: 10px;
+  font-size: 24rpx;
+}
+.first-box,.fourth-box{
+  width: 28%;
+  height: 160rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.second-box,.third-box{
+  width: 22%;
+  height: 160rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.first-box,.second-box,.third-box{
+  padding: 30rpx 0;
+}
+.wrap-box{
+  height: 100rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* line-height: 70rpx; */
+ 
+}
+.first-box .wrap-box,.second-box .wrap-box{
+  border-right: 2rpx solid #d2d2d2;
+}
+.title{
+  height: 40rpx;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content{
+  display: block;
+  height: 60rpx;
+  text-align: center;
+  font-weight: 700;
+  line-height: 70rpx;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fourth-box image{
+   width: 100%; 
+  height: 160rpx;
+}

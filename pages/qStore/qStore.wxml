@@ -1,0 +1,32 @@
+<!--pages/qStore/qStore.wxml-->
+<view class='container'>
+  <view class='head'>
+    <image src='/images/qstore.jpg' mode='aspectFill'></image>
+  </view>
+  <view class='content-box'>
+    <block wx:for="{{goods}}">
+      <view class='crad' bindtap='gotogoodsDetail' data-id='{{item.id}}'>
+        <view class='img'>
+          <image src='{{item.imageUr}}'></image>
+        </view>
+        <view class='info'>
+          <view class='title'>{{item.title}}</view>
+          <view class='price fl'>
+            <view class='now-price fl'>
+              <!-- <text>￥</text> -->
+              <text>{{item.nowPrice}}</text>
+            </view>
+            <view class='old-price fl'>
+              <text>{{item.oldPrice}}</text>
+            </view>
+          </view>
+          <view class='amount fl'>
+            <!-- <text>已售</text> -->
+            <text>{{item.amount}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- <view>没有更多了</view> -->
+</view>

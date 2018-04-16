@@ -1,0 +1,23 @@
+<!--components/addCarts/addCarts.wxml-->
+
+  <view class='fix-box'>
+    <view class='index' bindtap='gotoIndex'>
+      <view class='index-img'>
+        <image src='/images/tabBar/index.png'></image>
+      </view>
+      <view class='index-text'>首页</view>
+    </view>
+    <view class='cart' bindtap='gotoCarts'>
+      <view class='cart-img'>
+      <view class='addOne' animation="{{animationData}}">+1</view>
+        <view class='num'>{{counts}}</view>
+        <image src='/images/system/cart.png'></image>
+      </view>
+      <view class='cart-text'>购物车</view>
+    </view>
+    <view class='box-right'>
+      <view class='add-cart' bindtap='addToCarts'>加入购物车</view>
+      <view class='buy' bindtap='gotoOrderConfirm' data-id="{{goodsId}}">直接购买</view>
+    </view>
+  </view>
+  <!-- fix-box结束 -->

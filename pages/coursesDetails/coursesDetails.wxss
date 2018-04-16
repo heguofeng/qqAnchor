@@ -1,0 +1,164 @@
+/* pages/apply/apply.wxss */
+.head{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 30rpx 30rpx 0;
+}
+.mainPic{
+  width: 690rpx;
+  height: 400rpx;
+}
+.mainPic image{
+  width: 690rpx;
+  height: 400rpx;
+}
+.title{
+  width: 100%;
+  font-size: 32rpx;
+  font-weight: 700;
+  padding: 20rpx 0 0;
+}
+.author{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.author-title{
+  float: left;
+  font-size: 24rpx;
+  color: #b2b2b2;
+}
+.author image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  float: left;
+  margin: 25rpx 10rpx 0;
+}
+.author-name{
+  float: left;
+  font-size: 24rpx;
+  color: #f51e48;
+}
+.address,.date{
+  height: 100rpx;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 16rpx 30rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+.address .icon ,
+.date .icon,
+.content .icon{
+  float: left;
+  margin-top: 6rpx;
+  margin-left: 10rpx;
+}
+.address .icon image,
+.date .icon image,
+.content .icon image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.address-text,.date-text{
+  margin-left: 10rpx;
+  float: left;
+  
+}
+.address-title,.date-title{
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.address-name,.date-name{
+  font-size: 22rpx;
+  color: #b2b2b2;
+  width: 600rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+.address .right {
+  float: left;
+}
+.address .right image{
+    width: 28rpx;
+    height: 28rpx;
+    margin-top: 20rpx;
+}
+
+.action-box{
+  width: 100%;
+  height: 80rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+.btn-share,.btn-focus{
+
+  width: 194rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 10rpx;
+  font-size: 24rpx;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.btn-share{
+  margin-left: 300rpx;
+  background-color: #11CBD7;
+  float: left;
+}
+.btn-focus{
+  margin-left: 10rpx;
+  background-color: #FA4659;
+  float: left;
+}
+.heart{
+  float: left;
+  margin: 7rpx 15rpx 0 30rpx;
+}
+.heart image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.btn-text{
+  float: left;
+  margin-right: 10rpx;
+}
+.focus-num{
+  float: left;
+}
+
+.content{
+  padding: 10rpx 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content-title{
+  width: 690rpx;
+    box-sizing: border-box;
+  overflow: hidden;
+}
+.content-title text{
+  margin-left: 10rpx;
+  float: left;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.content-main{
+  width: 690rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.footer{
+  width: 100%;
+  height: 100rpx;
+}

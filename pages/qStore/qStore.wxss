@@ -1,0 +1,109 @@
+/* pages/qStore/qStore.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.head{
+  height: 360rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.head image{
+  width: 100%;
+  height: 100%;
+}
+
+/* pages/courses/courses.wxss */
+.content-box{
+    padding:8rpx 8rpx;   
+   width: 100%;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+.crad{
+  float: left;
+  margin: 8rpx 8rpx;
+  /* margin-bottom: 30rpx;  */
+  width: 351rpx;
+  box-sizing: border-box; 
+  height: 470rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+.crad .img{
+  width: 100%;
+  height: 351rpx;
+  overflow: hidden;
+}
+.crad .img image{
+  width: 100%;
+  height: 351rpx;
+}
+.crad .info{
+  float: left;
+}
+.info .title{
+  height: 50rpx;
+  width: 351rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  /* font-weight: 700; */
+  font-size: 24rpx;
+  line-height: 30rpx;  
+  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.price{
+  height: 70rpx;
+  width: 60%;
+  box-sizing: border-box;
+   padding-left: 10rpx; 
+  line-height: 70rpx;
+  color: #f51e48;
+   font-size: 30rpx;
+}
+.now-price{
+  font-size: 28rpx;
+  color: #f51e48;
+    /* font-weight: 700; */
+}
+.now-price text::before{
+  content: "￥";
+  font-size: 24rpx;
+}
+.old-price{
+  color: #b2b2b2; 
+  font-size: 24rpx;
+}
+.old-price text{
+  text-decoration: line-through;
+}
+.old-price text::before{
+  content: "￥";
+  margin-left: 10rpx;
+  text-decoration: line-through;
+}
+.price text{
+  float: left;
+}
+.amount{
+  height: 70rpx;
+  width: 40%;
+  box-sizing: border-box;
+  padding-right: 14rpx;
+  line-height: 70rpx;
+  text-align: right; 
+  float: left;
+}
+
+.amount text{
+  font-size: 23rpx;
+  color: #b2b2b2;
+
+}
+.amount text::before{
+  content: "已售";
+  padding-right: 2rpx;
+}

@@ -1,0 +1,23 @@
+<!--pages/courses/courses.wxml-->
+<view class='container'>
+  <view class='content-box'>
+    <block wx:for="{{courses}}" wx:for-item="course">
+      <view class='crad' bindtap='gotocoursesDetails' data-id='{{course.id}}'>
+        <view class='img'>
+          <image src='{{course.imageUr}}'></image>
+        </view>
+        <view class='info'>
+          <view class='title'>{{course.title}}</view>
+          <view class='date'>
+            <image src='/images/system/date.png'></image>
+            <text>{{course.date}}</text>
+          </view>
+          <view class='author'>
+            <text>{{course.author}}</text>
+            <image src='{{course.avantar}}'></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
